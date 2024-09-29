@@ -1,0 +1,128 @@
+:root {
+	--main-color: #ACEEF3 ;
+	--second-color:#FFB067 ;
+	--third-color: #FFE9E4;
+    --fourth-color:   #8f4323;
+    --fifth-color: #FF7077;
+}
+
+
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: "Kiwi Maru", serif;
+    background-image: url('../images/background.jpeg');
+    background-color:var(--fourth-color);
+    background-size: cover;
+    box-shadow: 5px 10px;
+}
+.glass-container{
+    width: 600px;
+    height: 400px;
+    position : relative;
+    background: var(--fourth-color);
+    opacity: 90%;
+   border-radius: 10px;
+}
+.login-box {
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 70%;
+    
+}
+h2 {
+    color:white;
+    font-family: "Kiwi Maru", serif;
+    margin-top: 30px;
+    margin-bottom:-10px;
+}
+input {
+    padding: 10px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    background: var();
+    border: 1px solid ;
+    color: var(--second-color);
+    font-size: 13px;
+}
+input::placeholder {
+    color: var(--second-color);
+    font-weight: bold;
+}
+.options {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.options a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+button {
+    background:var(--second-color);
+    box-shadow: 0 0 5px 5px var(--second-color);
+    color: var(--fourth-color);
+    padding: 10px;
+    border: none;
+    border-radius: 10px ;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+button:hover {
+    background: var(--third-color);
+    box-shadow: 0 0 5px 5px var(--third-color);
+    color: var(--fourth-color);
+    outline: 1px solid ;
+}
+.register:hover{
+    color:var(--fifth-color);
+
+}
+
+.login:hover{
+    color: var(--fifth-color);
+}
+
+#selectProduce{
+    color: var(--third-color);    
+}
+#option{
+    text-align: center;
+}
+#selected{
+    text-align: center;
+}
+#passwordConfirm{
+    margin-bottom:20px;
+}
+#produce{
+    margin-top:15px;
+    border-radius: 10px;
+    padding:5px 50px 5px 50px;
+}
+p{
+ background: transparent;   
+ font-family: "Kiwi Maru", serif;
+ color: var(--third-color);
+ outline: 1px none ;
+ border: none;
+}
+
+input, select, textarea{
+    font-family: "Kiwi Maru", serif;
+    background-color: var(--third-color);
+
+}
+

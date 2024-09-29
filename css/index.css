@@ -1,0 +1,144 @@
+:root {
+	--main-color: #ACEEF3 ;
+	--second-color:#FFB067 ;
+	--third-color: #FFE9E4;
+    --fourth-color:   #8f4323;
+    --fifth-color: #FF7077;
+}
+
+body{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color:var(--fourth-color);
+    font-family: "Kiwi Maru", serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.5fr auto auto auto;
+	grid-template-areas:
+		"title nav"
+		"pic welcome"
+		"table table"
+		"footer footer";
+}
+
+
+.title{  
+    grid-area:title;
+    margin-top:25px;
+    margin-left:25px;
+    color: var(--third-color);
+    font-size: 32px;
+}
+
+.nav{
+    grid-area: nav;
+    margin-top:25px;
+    border-color: var(--second-color);
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 25px;
+    color:var(--third-color);
+
+
+}
+.navbar{
+    grid-area:navbar ;
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 10px;
+    color: var(--third-color);
+    text-decoration: none;
+    font-size:18px;
+    width: 18%; 
+    text-align: right; 
+    
+}
+
+.navbar a:hover {
+    color: var(--second-color);
+}
+
+li{
+    display:inline-block;
+}
+
+
+.pic{
+    grid-area: pic;
+    width: 650px;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 25px;
+    border-radius: 10px;
+
+}
+.welcome{
+    color:var(--third-color);
+    margin-left: 30px;
+    margin-right: 70px;
+
+}
+.welcome h3{
+    font-weight: 100;
+}
+.table{
+    grid-area: table;
+}
+
+.footer{
+    grid-area: footer;
+    margin-top:50px;
+}
+
+
+
+span{
+    margin:20px;
+}
+
+#userName{
+    margin:0;
+
+}
+
+p{
+ background: transparent;   
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: var(--third-color);
+ outline: 1px none ;
+ border: none;
+}
+
+table{
+    margin: 0 auto;
+    margin-top: 50px;;
+    width:auto;
+    border: solid 2px;
+    border-color: #FFE9E4;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+th{
+   text-align: left;
+   color: var(--third-color);
+   padding-left:20px;
+}
+td{
+    padding-left: 20px;
+}
+
+tr{
+    text-align: left;
+    color: var(--second-color);
+    white-space: nowrap;
+}
+
+footer{
+    text-align: center;
+}
